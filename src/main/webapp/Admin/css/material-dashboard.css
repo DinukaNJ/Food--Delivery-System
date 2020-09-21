@@ -6,24 +6,27 @@
   font-size: .875rem;
 }
 
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
+
 html {
   font-family: sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-text-size-adjust: 100%;
   -ms-overflow-style: scrollbar;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @-ms-viewport {
   width: device-width;
 }
+
 
 article,
 aside,
@@ -39,14 +42,15 @@ section {
   display: block;
 }
 
+
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: left;
+  color: #212529;
   background-color: #fafafa;
 }
 
@@ -9479,15 +9483,18 @@ a.text-dark:focus {
   box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
 }
 
+
 .btn.btn-primary:active:hover,
 .btn.btn-primary:active:focus,
 .btn.btn-primary:active.focus,
 .btn.btn-primary.active:hover,
 .btn.btn-primary.active:focus,
 .btn.btn-primary.active.focus,
+
 .open>.btn.btn-primary.dropdown-toggle:hover,
 .open>.btn.btn-primary.dropdown-toggle:focus,
 .open>.btn.btn-primary.dropdown-toggle.focus,
+
 .show>.btn.btn-primary.dropdown-toggle:hover,
 .show>.btn.btn-primary.dropdown-toggle:focus,
 .show>.btn.btn-primary.dropdown-toggle.focus {
@@ -9575,9 +9582,11 @@ a.text-dark:focus {
 .btn.btn-secondary.active:hover,
 .btn.btn-secondary.active:focus,
 .btn.btn-secondary.active.focus,
+
 .open>.btn.btn-secondary.dropdown-toggle:hover,
 .open>.btn.btn-secondary.dropdown-toggle:focus,
 .open>.btn.btn-secondary.dropdown-toggle.focus,
+
 .show>.btn.btn-secondary.dropdown-toggle:hover,
 .show>.btn.btn-secondary.dropdown-toggle:focus,
 .show>.btn.btn-secondary.dropdown-toggle.focus {
@@ -9665,9 +9674,11 @@ a.text-dark:focus {
 .btn.btn-info.active:hover,
 .btn.btn-info.active:focus,
 .btn.btn-info.active.focus,
+
 .open>.btn.btn-info.dropdown-toggle:hover,
 .open>.btn.btn-info.dropdown-toggle:focus,
 .open>.btn.btn-info.dropdown-toggle.focus,
+
 .show>.btn.btn-info.dropdown-toggle:hover,
 .show>.btn.btn-info.dropdown-toggle:focus,
 .show>.btn.btn-info.dropdown-toggle.focus {
@@ -9755,9 +9766,11 @@ a.text-dark:focus {
 .btn.btn-success.active:hover,
 .btn.btn-success.active:focus,
 .btn.btn-success.active.focus,
+
 .open>.btn.btn-success.dropdown-toggle:hover,
 .open>.btn.btn-success.dropdown-toggle:focus,
 .open>.btn.btn-success.dropdown-toggle.focus,
+
 .show>.btn.btn-success.dropdown-toggle:hover,
 .show>.btn.btn-success.dropdown-toggle:focus,
 .show>.btn.btn-success.dropdown-toggle.focus {
@@ -9845,9 +9858,11 @@ a.text-dark:focus {
 .btn.btn-warning.active:hover,
 .btn.btn-warning.active:focus,
 .btn.btn-warning.active.focus,
+
 .open>.btn.btn-warning.dropdown-toggle:hover,
 .open>.btn.btn-warning.dropdown-toggle:focus,
 .open>.btn.btn-warning.dropdown-toggle.focus,
+
 .show>.btn.btn-warning.dropdown-toggle:hover,
 .show>.btn.btn-warning.dropdown-toggle:focus,
 .show>.btn.btn-warning.dropdown-toggle.focus {
@@ -9935,9 +9950,11 @@ a.text-dark:focus {
 .btn.btn-danger.active:hover,
 .btn.btn-danger.active:focus,
 .btn.btn-danger.active.focus,
+
 .open>.btn.btn-danger.dropdown-toggle:hover,
 .open>.btn.btn-danger.dropdown-toggle:focus,
 .open>.btn.btn-danger.dropdown-toggle.focus,
+
 .show>.btn.btn-danger.dropdown-toggle:hover,
 .show>.btn.btn-danger.dropdown-toggle:focus,
 .show>.btn.btn-danger.dropdown-toggle.focus {
@@ -10025,9 +10042,11 @@ a.text-dark:focus {
 .btn.btn-rose.active:hover,
 .btn.btn-rose.active:focus,
 .btn.btn-rose.active.focus,
+
 .open>.btn.btn-rose.dropdown-toggle:hover,
 .open>.btn.btn-rose.dropdown-toggle:focus,
 .open>.btn.btn-rose.dropdown-toggle.focus,
+
 .show>.btn.btn-rose.dropdown-toggle:hover,
 .show>.btn.btn-rose.dropdown-toggle:focus,
 .show>.btn.btn-rose.dropdown-toggle.focus {
@@ -10124,21 +10143,26 @@ a.text-dark:focus {
 .btn.active:hover,
 .btn.active:focus,
 .btn.active.focus,
+
 .open>.btn.dropdown-toggle:hover,
 .open>.btn.dropdown-toggle:focus,
 .open>.btn.dropdown-toggle.focus,
+
 .show>.btn.dropdown-toggle:hover,
 .show>.btn.dropdown-toggle:focus,
 .show>.btn.dropdown-toggle.focus,
+
 .btn.btn-default:active:hover,
 .btn.btn-default:active:focus,
 .btn.btn-default:active.focus,
 .btn.btn-default.active:hover,
 .btn.btn-default.active:focus,
 .btn.btn-default.active.focus,
+
 .open>.btn.btn-default.dropdown-toggle:hover,
 .open>.btn.btn-default.dropdown-toggle:focus,
 .open>.btn.btn-default.dropdown-toggle.focus,
+
 .show>.btn.btn-default.dropdown-toggle:hover,
 .show>.btn.btn-default.dropdown-toggle:focus,
 .show>.btn.btn-default.dropdown-toggle.focus {
@@ -10301,9 +10325,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline.active:hover,
 .btn.btn-outline.active:focus,
 .btn.btn-outline.active.focus,
+
 .open>.btn.btn-outline.dropdown-toggle:hover,
 .open>.btn.btn-outline.dropdown-toggle:focus,
 .open>.btn.btn-outline.dropdown-toggle.focus,
+
 .show>.btn.btn-outline.dropdown-toggle:hover,
 .show>.btn.btn-outline.dropdown-toggle:focus,
 .show>.btn.btn-outline.dropdown-toggle.focus {
@@ -10371,9 +10397,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline.active:hover,
 .bg-inverse .btn.btn-outline.active:focus,
 .bg-inverse .btn.btn-outline.active.focus,
+
 .open>.bg-inverse .btn.btn-outline.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline.dropdown-toggle.focus {
@@ -10445,9 +10473,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-primary.active:hover,
 .btn.btn-outline-primary.active:focus,
 .btn.btn-outline-primary.active.focus,
+
 .open>.btn.btn-outline-primary.dropdown-toggle:hover,
 .open>.btn.btn-outline-primary.dropdown-toggle:focus,
 .open>.btn.btn-outline-primary.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-primary.dropdown-toggle:hover,
 .show>.btn.btn-outline-primary.dropdown-toggle:focus,
 .show>.btn.btn-outline-primary.dropdown-toggle.focus {
@@ -10515,9 +10545,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-primary.active:hover,
 .bg-inverse .btn.btn-outline-primary.active:focus,
 .bg-inverse .btn.btn-outline-primary.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-primary.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-primary.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-primary.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-primary.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-primary.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-primary.dropdown-toggle.focus {
@@ -10589,9 +10621,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-secondary.active:hover,
 .btn.btn-outline-secondary.active:focus,
 .btn.btn-outline-secondary.active.focus,
+
 .open>.btn.btn-outline-secondary.dropdown-toggle:hover,
 .open>.btn.btn-outline-secondary.dropdown-toggle:focus,
 .open>.btn.btn-outline-secondary.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-secondary.dropdown-toggle:hover,
 .show>.btn.btn-outline-secondary.dropdown-toggle:focus,
 .show>.btn.btn-outline-secondary.dropdown-toggle.focus {
@@ -10659,9 +10693,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-secondary.active:hover,
 .bg-inverse .btn.btn-outline-secondary.active:focus,
 .bg-inverse .btn.btn-outline-secondary.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-secondary.dropdown-toggle.focus {
@@ -10733,9 +10769,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-info.active:hover,
 .btn.btn-outline-info.active:focus,
 .btn.btn-outline-info.active.focus,
+
 .open>.btn.btn-outline-info.dropdown-toggle:hover,
 .open>.btn.btn-outline-info.dropdown-toggle:focus,
 .open>.btn.btn-outline-info.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-info.dropdown-toggle:hover,
 .show>.btn.btn-outline-info.dropdown-toggle:focus,
 .show>.btn.btn-outline-info.dropdown-toggle.focus {
@@ -10803,9 +10841,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-info.active:hover,
 .bg-inverse .btn.btn-outline-info.active:focus,
 .bg-inverse .btn.btn-outline-info.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-info.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-info.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-info.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-info.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-info.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-info.dropdown-toggle.focus {
@@ -10877,9 +10917,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-success.active:hover,
 .btn.btn-outline-success.active:focus,
 .btn.btn-outline-success.active.focus,
+
 .open>.btn.btn-outline-success.dropdown-toggle:hover,
 .open>.btn.btn-outline-success.dropdown-toggle:focus,
 .open>.btn.btn-outline-success.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-success.dropdown-toggle:hover,
 .show>.btn.btn-outline-success.dropdown-toggle:focus,
 .show>.btn.btn-outline-success.dropdown-toggle.focus {
@@ -10947,9 +10989,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-success.active:hover,
 .bg-inverse .btn.btn-outline-success.active:focus,
 .bg-inverse .btn.btn-outline-success.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-success.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-success.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-success.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-success.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-success.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-success.dropdown-toggle.focus {
@@ -11021,9 +11065,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-warning.active:hover,
 .btn.btn-outline-warning.active:focus,
 .btn.btn-outline-warning.active.focus,
+
 .open>.btn.btn-outline-warning.dropdown-toggle:hover,
 .open>.btn.btn-outline-warning.dropdown-toggle:focus,
 .open>.btn.btn-outline-warning.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-warning.dropdown-toggle:hover,
 .show>.btn.btn-outline-warning.dropdown-toggle:focus,
 .show>.btn.btn-outline-warning.dropdown-toggle.focus {
@@ -11091,9 +11137,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-warning.active:hover,
 .bg-inverse .btn.btn-outline-warning.active:focus,
 .bg-inverse .btn.btn-outline-warning.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-warning.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-warning.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-warning.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-warning.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-warning.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-warning.dropdown-toggle.focus {
@@ -11165,9 +11213,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .btn.btn-outline-danger.active:hover,
 .btn.btn-outline-danger.active:focus,
 .btn.btn-outline-danger.active.focus,
+
 .open>.btn.btn-outline-danger.dropdown-toggle:hover,
 .open>.btn.btn-outline-danger.dropdown-toggle:focus,
 .open>.btn.btn-outline-danger.dropdown-toggle.focus,
+
 .show>.btn.btn-outline-danger.dropdown-toggle:hover,
 .show>.btn.btn-outline-danger.dropdown-toggle:focus,
 .show>.btn.btn-outline-danger.dropdown-toggle.focus {
@@ -11235,9 +11285,11 @@ fieldset[disabled][disabled] .btn-group-raised .btn,
 .bg-inverse .btn.btn-outline-danger.active:hover,
 .bg-inverse .btn.btn-outline-danger.active:focus,
 .bg-inverse .btn.btn-outline-danger.active.focus,
+
 .open>.bg-inverse .btn.btn-outline-danger.dropdown-toggle:hover,
 .open>.bg-inverse .btn.btn-outline-danger.dropdown-toggle:focus,
 .open>.bg-inverse .btn.btn-outline-danger.dropdown-toggle.focus,
+
 .show>.bg-inverse .btn.btn-outline-danger.dropdown-toggle:hover,
 .show>.bg-inverse .btn.btn-outline-danger.dropdown-toggle:focus,
 .show>.bg-inverse .btn.btn-outline-danger.dropdown-toggle.focus {
@@ -11938,87 +11990,106 @@ form {
 .radio label label:has(input[type=checkbox][disabled]),
 .radio label label:has(input[type=checkbox][disabled]):hover,
 .radio label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .radio label,
 fieldset[disabled] .radio label:hover,
 fieldset[disabled] .radio label:focus,
+
 .is-focused .radio label label:has(input[type=radio][disabled]),
 .is-focused .radio label label:has(input[type=radio][disabled]):hover,
 .is-focused .radio label label:has(input[type=radio][disabled]):focus,
 .is-focused .radio label label:has(input[type=checkbox][disabled]),
 .is-focused .radio label label:has(input[type=checkbox][disabled]):hover,
 .is-focused .radio label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .is-focused .radio label,
 fieldset[disabled] .is-focused .radio label:hover,
 fieldset[disabled] .is-focused .radio label:focus,
+
 .radio-inline label:has(input[type=radio][disabled]),
 .radio-inline label:has(input[type=radio][disabled]):hover,
 .radio-inline label:has(input[type=radio][disabled]):focus,
 .radio-inline label:has(input[type=checkbox][disabled]),
 .radio-inline label:has(input[type=checkbox][disabled]):hover,
 .radio-inline label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .radio-inline,
 fieldset[disabled] .radio-inline:hover,
 fieldset[disabled] .radio-inline:focus,
+
 .is-focused .radio-inline label:has(input[type=radio][disabled]),
 .is-focused .radio-inline label:has(input[type=radio][disabled]):hover,
 .is-focused .radio-inline label:has(input[type=radio][disabled]):focus,
 .is-focused .radio-inline label:has(input[type=checkbox][disabled]),
 .is-focused .radio-inline label:has(input[type=checkbox][disabled]):hover,
 .is-focused .radio-inline label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .is-focused .radio-inline,
 fieldset[disabled] .is-focused .radio-inline:hover,
 fieldset[disabled] .is-focused .radio-inline:focus,
+
 .checkbox label label:has(input[type=radio][disabled]),
 .checkbox label label:has(input[type=radio][disabled]):hover,
 .checkbox label label:has(input[type=radio][disabled]):focus,
 .checkbox label label:has(input[type=checkbox][disabled]),
 .checkbox label label:has(input[type=checkbox][disabled]):hover,
 .checkbox label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .checkbox label,
 fieldset[disabled] .checkbox label:hover,
 fieldset[disabled] .checkbox label:focus,
+
 .is-focused .checkbox label label:has(input[type=radio][disabled]),
 .is-focused .checkbox label label:has(input[type=radio][disabled]):hover,
 .is-focused .checkbox label label:has(input[type=radio][disabled]):focus,
 .is-focused .checkbox label label:has(input[type=checkbox][disabled]),
 .is-focused .checkbox label label:has(input[type=checkbox][disabled]):hover,
 .is-focused .checkbox label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .is-focused .checkbox label,
 fieldset[disabled] .is-focused .checkbox label:hover,
 fieldset[disabled] .is-focused .checkbox label:focus,
+
 .checkbox-inline label:has(input[type=radio][disabled]),
 .checkbox-inline label:has(input[type=radio][disabled]):hover,
 .checkbox-inline label:has(input[type=radio][disabled]):focus,
 .checkbox-inline label:has(input[type=checkbox][disabled]),
 .checkbox-inline label:has(input[type=checkbox][disabled]):hover,
 .checkbox-inline label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .checkbox-inline,
 fieldset[disabled] .checkbox-inline:hover,
 fieldset[disabled] .checkbox-inline:focus,
+
 .is-focused .checkbox-inline label:has(input[type=radio][disabled]),
 .is-focused .checkbox-inline label:has(input[type=radio][disabled]):hover,
 .is-focused .checkbox-inline label:has(input[type=radio][disabled]):focus,
 .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]),
 .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):hover,
 .is-focused .checkbox-inline label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .is-focused .checkbox-inline,
 fieldset[disabled] .is-focused .checkbox-inline:hover,
 fieldset[disabled] .is-focused .checkbox-inline:focus,
+
 .switch label label:has(input[type=radio][disabled]),
 .switch label label:has(input[type=radio][disabled]):hover,
 .switch label label:has(input[type=radio][disabled]):focus,
 .switch label label:has(input[type=checkbox][disabled]),
 .switch label label:has(input[type=checkbox][disabled]):hover,
 .switch label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .switch label,
 fieldset[disabled] .switch label:hover,
 fieldset[disabled] .switch label:focus,
+
 .is-focused .switch label label:has(input[type=radio][disabled]),
 .is-focused .switch label label:has(input[type=radio][disabled]):hover,
 .is-focused .switch label label:has(input[type=radio][disabled]):focus,
 .is-focused .switch label label:has(input[type=checkbox][disabled]),
 .is-focused .switch label label:has(input[type=checkbox][disabled]):hover,
 .is-focused .switch label label:has(input[type=checkbox][disabled]):focus,
+
 fieldset[disabled] .is-focused .switch label,
 fieldset[disabled] .is-focused .switch label:hover,
 fieldset[disabled] .is-focused .switch label:focus {
@@ -12107,10 +12178,13 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .form-control:valid~.valid-feedback,
 .was-validated .is-focused .form-control:valid~.valid-tooltip,
+
 .is-focused .form-control.is-valid~.valid-feedback,
 .is-focused .form-control.is-valid~.valid-tooltip,
+
 .was-validated .is-focused .custom-select:valid~.valid-feedback,
 .was-validated .is-focused .custom-select:valid~.valid-tooltip,
+
 .is-focused .custom-select.is-valid~.valid-feedback,
 .is-focused .custom-select.is-valid~.valid-tooltip {
   display: block;
@@ -12123,6 +12197,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .form-check-input:valid~.valid-feedback,
 .was-validated .is-focused .form-check-input:valid~.valid-tooltip,
+
 .is-focused .form-check-input.is-valid~.valid-feedback,
 .is-focused .form-check-input.is-valid~.valid-tooltip {
   display: block;
@@ -12140,6 +12215,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .custom-control-input:valid~.valid-feedback,
 .was-validated .is-focused .custom-control-input:valid~.valid-tooltip,
+
 .is-focused .custom-control-input.is-valid~.valid-feedback,
 .is-focused .custom-control-input.is-valid~.valid-tooltip {
   display: block;
@@ -12167,6 +12243,7 @@ fieldset[disabled][disabled] .form-control,
 
 .was-validated .is-focused .custom-file-input:valid~.valid-feedback,
 .was-validated .is-focused .custom-file-input:valid~.valid-tooltip,
+
 .is-focused .custom-file-input.is-valid~.valid-feedback,
 .is-focused .custom-file-input.is-valid~.valid-tooltip {
   display: block;
@@ -12261,6 +12338,7 @@ fieldset[disabled][disabled] .has-success .form-control,
 
 .was-validated .has-success .is-focused .form-control:valid,
 .has-success .is-focused .form-control.is-valid,
+
 .was-validated .has-success .is-focused .custom-select:valid,
 .has-success .is-focused .custom-select.is-valid {
   border-color: #4caf50;
@@ -12268,6 +12346,7 @@ fieldset[disabled][disabled] .has-success .form-control,
 
 .was-validated .has-success .is-focused .form-control:valid:focus,
 .has-success .is-focused .form-control.is-valid:focus,
+
 .was-validated .has-success .is-focused .custom-select:valid:focus,
 .has-success .is-focused .custom-select.is-valid:focus {
   border-color: #4caf50;
@@ -12276,10 +12355,13 @@ fieldset[disabled][disabled] .has-success .form-control,
 
 .was-validated .has-success .is-focused .form-control:valid~.valid-feedback,
 .was-validated .has-success .is-focused .form-control:valid~.valid-tooltip,
+
 .has-success .is-focused .form-control.is-valid~.valid-feedback,
 .has-success .is-focused .form-control.is-valid~.valid-tooltip,
+
 .was-validated .has-success .is-focused .custom-select:valid~.valid-feedback,
 .was-validated .has-success .is-focused .custom-select:valid~.valid-tooltip,
+
 .has-success .is-focused .custom-select.is-valid~.valid-feedback,
 .has-success .is-focused .custom-select.is-valid~.valid-tooltip {
   display: block;
@@ -12292,6 +12374,7 @@ fieldset[disabled][disabled] .has-success .form-control,
 
 .was-validated .has-success .is-focused .form-check-input:valid~.valid-feedback,
 .was-validated .has-success .is-focused .form-check-input:valid~.valid-tooltip,
+
 .has-success .is-focused .form-check-input.is-valid~.valid-feedback,
 .has-success .is-focused .form-check-input.is-valid~.valid-tooltip {
   display: block;
@@ -12309,6 +12392,7 @@ fieldset[disabled][disabled] .has-success .form-control,
 
 .was-validated .has-success .is-focused .custom-control-input:valid~.valid-feedback,
 .was-validated .has-success .is-focused .custom-control-input:valid~.valid-tooltip,
+
 .has-success .is-focused .custom-control-input.is-valid~.valid-feedback,
 .has-success .is-focused .custom-control-input.is-valid~.valid-tooltip {
   display: block;
