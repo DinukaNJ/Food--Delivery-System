@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CustomizeServlet</servlet-name>
+        <servlet-class>Controller.CustomizeServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Loadingcart</servlet-name>
+        <servlet-class>Controller.cart.Loadingcart</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Authentication</servlet-name>
+        <servlet-class>Controller.users.Authentication</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Controller.users.Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>Controller.users.Register</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadFoodsTables</servlet-name>
+        <servlet-class>Controller.Admin.LoadFoodsTables</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditFoods</servlet-name>
+        <servlet-class>Controller.Admin.EditFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteFoods</servlet-name>
+        <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomizeServlet</servlet-name>
+        <url-pattern>/CustomizeServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Loadingcart</servlet-name>
+        <url-pattern>/Loadingcart</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Authentication</servlet-name>
+        <url-pattern>/Authentication</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadFoodsTables</servlet-name>
+        <url-pattern>/LoadFoodsTables</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditFoods</servlet-name>
+        <url-pattern>/EditFoods</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteFoods</servlet-name>
+        <url-pattern>/DeleteFoods</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!--dcleare the storage path profile picture to store-->
+    <context-param>
+        <param-name>file-upload</param-name>
+        <param-value>D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\webapp\assets\profile\</param-value>
+    </context-param>
+    <!--dcleare the storage path prdouct  picture to store-->
+    <context-param>
+        <param-name>product-upload</param-name>
+        <param-value>D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\webapp\assets\products\</param-value>
+    </context-param>
+</web-app>
