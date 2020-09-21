@@ -7,9 +7,9 @@
   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <title>
-    Food Order System for NSBM Cantenn
-  </title>
+
+  <title>Food Order System for NSBM Cantenn</title>
+
   <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -22,42 +22,46 @@
 
 <body class="">
   <div class="wrapper ">
-    <div class="sidebar" data-color="purple" data-background-color="white" data-image="assets/img/sidebar-1.jpg">
+    <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="nsbmcanteen.com" class="simple-text logo-normal">
-          NSBM Canteen
-        </a></div>
+      <div class="logo">
+        <a href="nsbmcanteen.com" class="simple-text logo-normal">NSBM Canteen</a>
+      </div>
+
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item active  ">
+
+          <li class="nav-item  ">
             <a class="nav-link" href="./index.html">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="./userprofile.html">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>
-          <li class="nav-item ">
+
+          <li class="nav-item active ">
             <a class="nav-link" href="./tables.html">
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
           </li>
-          
+
           <li class="nav-item ">
             <a class="nav-link" href="./viewuser.html">
               <i class="material-icons">people</i>
               <p>Users</p>
             </a>
           </li>
+
           <li class="nav-item ">
             <a class="nav-link" href="./viewoption.html">
               <i class="fa fa-cutlery "></i>
@@ -65,16 +69,16 @@
             </a>
           </li>
           
-          
         </ul>
       </div>
     </div>
+    
     <div class="main-panel">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Dashboard</a>
+            <a class="navbar-brand" href="javascript:;">Table List</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -115,70 +119,83 @@
       <div class="content">
         <div class="container-fluid">
           <div class="row">
-            <div class="col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-warning card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-cutlery "></i>
-                  </div>
-                  
+            
+
+            <div class="col-md-12">
+              <div class="card">
+                <div class="card-header card-header-primary">
+                  <h4 class="card-title ">Order Detais</h4>
+                  <p class="card-category"> Here is a subtitle for this table</p>
                 </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <h4><a href="viewfood.html">Food</a></h4>
-                    <a href="javascript:;"></a>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          User ID
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+                        <th>
+                          Field 1
+                        </th>
+
+                        
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td> 
+                          <td>
+                            text
+                          </td>
+                          <td>
+                            text
+                          </td>
+                          <td>
+                            text
+                          </td>
+                          <td>
+                            text
+                          </td>
+                          <td>
+                            text
+                          </td>
+                          <td>
+                            text
+                          </td>
+                          <td class="td-actions text-right">
+                            <button type="button" rel="tooltip" title="Edit " class="btn btn-primary btn-link btn-sm">
+                              <i class="material-icons">edit</i>
+                            </button>
+                            <button type="button" rel="tooltip" title="Delete" class="btn btn-danger btn-link btn-sm">
+                              <i class="material-icons">close</i>
+                            </button>
+                          </td>
+                        </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-success card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-shopping-cart"></i>
-                  </div>
-                  
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <h4><a href="vieworder.html">Order</a></h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-danger card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-shopping-basket"></i>
-                  </div>
-                  
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <h4><a href="viewoption.html">Food Option</a></h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 col-sm-6">
-              <div class="card card-stats">
-                <div class="card-header card-header-info card-header-icon">
-                  <div class="card-icon">
-                    <i class="fa fa-user"></i>
-                  </div>
-                  
-                </div>
-                <div class="card-footer">
-                  <div class="stats">
-                    <h4><a href="viewuser.html">User</a></h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          
+
             
           </div>
         </div>
@@ -190,7 +207,9 @@
       </footer>
     </div>
   </div>
-  
+  <div class="fixed-plugin">
+    
+  </div>
   <!--   Core JS Files   -->
   <script src="../assets/js/core/jquery.min.js"></script>
   <script src="../assets/js/core/popper.min.js"></script>
@@ -403,13 +422,6 @@
 
         });
       });
-    });
-  </script>
-  <script>
-    $(document).ready(function() {
-      // Javascript method's body can be found in assets/js/demos.js
-      md.initDashboardPageCharts();
-
     });
   </script>
 </body>
