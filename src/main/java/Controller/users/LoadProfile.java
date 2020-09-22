@@ -30,6 +30,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "LoadProfile", urlPatterns = {"/LoadProfile"})
 public class LoadProfile extends HttpServlet {
 
+   
     Connection conn=Conn.getConnection();
     PrintWriter out;
     @Override
@@ -37,11 +38,11 @@ public class LoadProfile extends HttpServlet {
             throws ServletException, IOException {
         out=response.getWriter();
       
-          String uid = (String) (request.getSession().getAttribute("uid") != null ? request.getSession().getAttribute("uid"):"");
-          
-//          user check
+        String uid = (String) (request.getSession().getAttribute("uid") != null ? request.getSession().getAttribute("uid"):"");
+       
+          //user check
         if(uid.equals("")) {  
-          //  response.sendRedirect("Login.jsp");
+           response.sendRedirect("Login.jsp");
             request.getRequestDispatcher("Login.jsp").forward(request, response);
         }
 
@@ -57,8 +58,8 @@ String error = (String) (request.getSession().getAttribute("error") != null ? re
 			out.println("});");
 			out.println("</script>");
                         loadprofile(uid,request);
-			RequestDispatcher rd = request.getRequestDispatcher("LoadProfile");
-			rd.include(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("LoadProfile");
+//			rd.include(request, response);
    
   
   }else if(error.equals("false")){
@@ -73,8 +74,8 @@ String error = (String) (request.getSession().getAttribute("error") != null ? re
 			out.println("</script>");
                         
                         loadprofile(uid,request);
-			RequestDispatcher rd = request.getRequestDispatcher("LoadProfile");
-			rd.include(request, response);
+//			RequestDispatcher rd = request.getRequestDispatcher("LoadProfile");
+//			rd.include(request, response);
   
   }else {
   
@@ -116,17 +117,17 @@ String error = (String) (request.getSession().getAttribute("error") != null ? re
         
          for(user u : userlist){
                     
-//                  out.println(u.getUname());
-//                   out.println(u.getFname());
-//                    out.println(u.getLname());
-//                     out.println(u.getEmail());
-//                      out.println(u.getPass());
-//                       out.println(u.getRole());
+                  out.println(u.getUname());
+                   out.println(u.getFname());
+                    out.println(u.getLname());
+                     out.println(u.getEmail());
+                      out.println(u.getPass());
+                       out.println(u.getRole());
          }
 
 
         
- request.setAttribute("profilelist", userlist);
+    request.setAttribute("profilelist", userlist);
         }catch(SQLException ex){
             System.out.println(ex.toString());
         }
@@ -141,6 +142,7 @@ String error = (String) (request.getSession().getAttribute("error") != null ? re
     
     }   
         
+            
     
 
 }
