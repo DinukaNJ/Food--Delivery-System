@@ -1,7 +1,5 @@
 
-<%@page import="Model.Admin.Order"%>
-<%@page import="Model.option"%>
-<%@page import="Model.items"%>
+<%@page import="Model.users.user"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <!DOCTYPE html>
@@ -9,8 +7,8 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="components/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="components/img/favicon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
     Food Order System for NSBM Cantenn
@@ -21,57 +19,50 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
   <!-- CSS Files -->
   <link href="${pageContext.request.contextPath}/Admin/components/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
-  
-  
-<!-- javaScrpit codes -->
-
-
-
-
+ 
 </head>
 
 <body class="">
-<div class="wrapper ">
-    <div class="sidebar" data-color="green" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-      <!--
+  <div class="wrapper ">
+    <div class="sidebar" data-color="green" data-background-color="white" data-image="assets/img/sidebar-1.jpg">
       <!--
         Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
         Tip 2: you can also add an image using data-image tag
     -->
-     <div class="logo"><a href="http://nsbmcanteen.com" class="simple-text logo-normal">
-              <img src="${pageContext.request.contextPath}/assets/icon/nsbmlogo.png" width="60px;">
-          NSBM Canteen
+      <div class="logo"><a href="nsbmcanteen.com" class="simple-text logo-normal">
+               <img src="${pageContext.request.contextPath}/assets/icon/nsbmlogo.png" width="60px;">
+          NSBM canteen
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
-          <li class="nav-item  ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/Admin/index.jsp">
+          <li class="nav-item ">
+            <a class="nav-link" href="Admin/index.jsp">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
 <!--          <li class="nav-item ">
-            <a class="nav-link" href="./userprofile.jsp">
+            <a class="nav-link" href="./userprofile.html">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
           </li>-->
-          <li class="nav-item active ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/Admin/tables.jsp">
+          <li class="nav-item ">
+            <a class="nav-link" href="./tables.jsp">
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
           </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/Admin/viewuser.jsp">
+          <li class="nav-item active">
+            <a class="nav-link" href="./viewuser.jsp">
               <i class="material-icons">people</i>
               <p>Users</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/Admin/viewoption.html">
-              <i class="fa fa-cutlery "></i>
+            <a class="nav-link" href="./viewoption.html">
+                <i class="fa fa-cutlery "></i>
               <p>Food Management</p>
             </a>
           </li>
@@ -81,113 +72,29 @@
     </div>
     <div class="main-panel">
       <!-- Navbar -->
-     
-       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
+     <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
         <div class="container-fluid">
           <div class="navbar-wrapper">
-            <a class="navbar-brand" href="javascript:;">Order Table</a>
+            <a class="navbar-brand" href="javascript:;">User Details</a>
           </div>
              <jsp:include page="./components/header.jsp"></jsp:include>
 
         </div>
       </nav>
-  
       <!-- End Navbar -->
       <div class="content">
         <div class="container-fluid">
-          <div class="row">
-   
-              
-              
-<!--modal start--><!-- Modal -->
-<!--    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header ">
-                  <h5 class="modal-title" id="exampleModalLabel">Add Options</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                      model login form 
-                  <form   action="${pageContext.request.contextPath}/AddOption" method="POST" >
-                    <div class="form-group row">
-                     
-                         Option
-                        <select class="form-control" id="fdtype" name="fdoption">
-                             
-                          <option value="Egg">Egg</option>
-                          <option value="chicken">chicken</option>
-                          <option value="vegetable">vegetable</option>
-                          <option value="fish">fish</option>
+            
+            
                          
-                           
-                      </select>
-                    
-                        
-                        
-                    </div>
-                    
-                     <div class="form-group row">
-                       Type
-                        <select class="form-control" id="fdtype" name="fdtype">
-                      
-                          <option value="Fried Rice">Fried Rice</option>
-                          <option value="Rice and Curry">Rice and Curry</option>
-                          <option value="Kottu">Kottu</option>
-                         <option value="Short Eats">Short Eats</option>
-                           <option value="Other">Other</option> 
-                           <option value="String hoppers">String hoppers</option> 
-                           <option value="Grain">Grain</option>
-                           <option value="Noodles">Noodles</option>
-                           
-                      </select>
-                    </div>
-                      <div class="form-group row">
-                     
-                      <div class="col-sm-10">
-                       <input type="text" name="fdprice"/>  
-                      </div>
-                    </div>
-                 
-                    <div class="modal-footer">
-                      <div class="col-sm-10 text-right">
-                          
-                            
-                        <button type="submit" class="btn btn-success">Add</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </form>
-                    
-                    
-                    
-                </div>
-              
-              </div>
-            </div>
-        </div>-->
-<!--model end-->
-              
-              
-              
-              
-              
-<!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-  Add
-</button>-->
-        
-     <div class="col-md-12">
-                
-               <% String error = (String) (request.getSession().getAttribute("error") != null ? request.getSession().getAttribute("error"):"");
+<% String error = (String) (request.getSession().getAttribute("error") != null ? request.getSession().getAttribute("error"):"");
 
 if(error.equals("true")){
    
 
 %>
             
-    <h3 style="color: red;float: right;"> Error <h3> <br>  
+   <h3 style="color: red;float: right;"> Error <h3> <br>  
             
             <%
                 
@@ -197,115 +104,157 @@ if(error.equals("true")){
 else if(error.equals("false")){
 %>
             
-   <h3 style="color: green;float: right;"> Success <h3> <br>     
+<h3 style="color: green;float: right;"> Success <h3> <br>   
             
-            <%
+<%
 
 }
 
 
-%>
-                
-        <div class="card">
-                <div class="card-header card-header-success">
-                  <h4 class="card-title ">Options Detais</h4>
-                  <p class="card-category"> Here is a subtitle for this table</p>
-                </div>
-                <div class="card-body">
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead class=" text-success">
-                        <th>
-                           ID
-                        </th>
-                        <th>
-                       Discretion
-                        </th>
-                        <th>
-                        
-                        Order User
-                        </th>
-                        <th>
-                        
-                        Time
-                        </th>
+%>   
+            
+          <div class="row">
+
+              
+  <% 
+      
+      
+   List<user> userList = (ArrayList<user>) request.getAttribute("userList");
+                       for(user us : userList){
+       
+
+            %>   
+              
+              <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="card card-stats">   
+                  <h4 class="text-right"><%=us.getStatus()%>&ensp;</h4> 
+                <div class="card-header card-header-info card-header-icon">
+                     
                    
-                        
-                      </thead>
-                      <tbody>  
-        
-        
-        
-          <% 
-   List<Order> OrderList = (ArrayList<Order>) request.getAttribute("OrderList");
-                       for(Order od : OrderList){
-                            
-            %> 
-                          
+                  <div class="card-icon">
+                      <img src="${pageContext.request.contextPath}/assets/profile/<%=us.getUid()%>.png" style="width:60px;height: 60px; border-radius:40px;">
+    
+                  </div>
                     
-                        <tr>
-                          <td>
-                              <%=od.getId() %>
-                            
-                          </td>
-                          <td>
-                              <%=od.getDes() %>
-                            
-                          </td>
-                          <td>
-                              <%=od.getOduser() %>
-                            
-                          </td>
-                           <td>
-                              <%=od.getTime() %>
-                            
-                          </td>
+<!--                    <a style="color: grey;" class="nav-link" href="userprofile.jsp" data-toggle="tab">
+                        <i class="material-icons" style="color: grey;">edit</i> Edit
+                            <div class="ripple-container"></div>
+                    
+                    </a>-->
+
+
+
+                </div>
+                  
+          
+                <div class="card-footer">
+                  <div class="stats">
+                     <form action="${pageContext.request.contextPath}/EditUsers" method="POST"  enctype="multipart/form-data">
+                    <div class="form-group row">
+                     
+                        <input type="hidden" value="<%=us.getUid()%>" name="uid">
+                        
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="User Name"  value="<%= us.getUname()%>"name="uname">
+                      </div>
+                    </div>
+                     <div class="form-group row">
+                     
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="First Name"  value="<%= us.getFname()%>" name="fname">
+                      </div>
+                    </div>
+                     <div class="form-group row">
+                     
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Last Name"  value="<%= us.getLname()%>" name="lname">
+                      </div>
+                    </div>
+                     <div class="form-group row">
+                     
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="Email" value="<%= us.getEmail()%>" name="email">
+                      </div>
+                    </div>
+                     
+                      
+                  <div class="form-group row">
+                     
+                      <div class="col-sm-10">
+                          <input type="text" class="form-control"  placeholder="address" value="<%= us.getAddress()%>" name="address">
+                      </div>
+                    </div>
+                      
+                     <div class="form-group row">
+                     <div class="col-sm-10">
+                    <select class="form-control" id="fdperiod" name="status">
+                          <option value="<%=us.getStatus()%>"><%=us.getStatus()%></option>
+                          <option value="active">active</option>
+                          <option value="inactive">inactive</option>
+            
+                      </select>
+                     </div>
+                    </div>
+
+                      
+                     
+                     <div class="form-group row">
+                         <div class="col-sm-10">
+                        <label for="sel1">User Image</label>
+                        </div>
+                      </div>
+                       <div class="col-sm-10">
+                      <input type="file" class="form-control" name="fdimmg"> 
+                       </div>
+                    <div class="modal-footer">
+                      <div class="col-sm-10 text-right">
                           
-                         
-                          
-                          
-                        <td class="td-actions text-right">
-                              
-<!--                              <button type="submit" rel="tooltip" title="Edit " value="edit" class="btn btn-success btn-link btn-sm">
+                            
+                        <button type="submit" rel="tooltip" title="Edit " value="edit" class="btn btn-success btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button>
-                              -->
+                              
                           
                               
-                              <a href="DeleteOrder?id=<%= od.getId()%>">
+                              <a href="DeleteUsers?id=<%=us.getUid()%>">
                             <button type="button" rel="tooltip" title="Delete" class="btn btn-danger btn-link btn-sm">
                                 
                                
                               <i class="material-icons">close</i>
                             </button>
                               </a>    
-                                  
-                          </td>
-                      
-                        </tr>
-                        
-                       
-                          
-       <% } %>>
-        
-        
-        
-        
-       
-                      </tbody>
-                    </table>
+
+                      </div>
+                    </div>
+                  </form>
+                    
+                    
                   </div>
                 </div>
               </div>
+            
             </div>
 
+           <%
+               
+               }  
+           
+           
+           %> 
+             
+              
+           
+             
+             
+            
+          </div>
+        
+          
+          
             
           </div>
         </div>
-      </div> 
-        
-        
-
+      </div>
       <footer class="footer">
         <div class="container-fluid">
           
@@ -313,12 +262,8 @@ else if(error.equals("false")){
       </footer>
     </div>
   </div>
-  <div class="fixed-plugin">
-    
-  </div>
-
-</body>
- <!--   Core JS Files   -->
+  
+  <!--   Core JS Files   -->
   <script src="${pageContext.request.contextPath}/Admin/components/js/core/jquery.min.js"></script>
   <script src="${pageContext.request.contextPath}/Admin/components/js/core/popper.min.js"></script>
   <script src="${pageContext.request.contextPath}/Admin/components/js/core/bootstrap-material-design.min.js"></script>
@@ -532,4 +477,13 @@ else if(error.equals("false")){
       });
     });
   </script>
+  <script>
+    $(document).ready(function() {
+      // Javascript method's body can be found in assets/js/demos.js
+      md.initDashboardPageCharts();
+
+    });
+  </script>
+</body>
+
 </html>
