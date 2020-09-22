@@ -55,20 +55,20 @@ PrintWriter out;
        //+File.separator
         
         
-        File fileSaveDir = new File(savePath);
-        if (!fileSaveDir.exists()) {
-            fileSaveDir.mkdir();
-        }
-        
-           for (Part part : request.getParts()) {
-               
-            //user ud give as file nama reduce the reaprt and limated storage   
-            String fileName = uid;
-            // refines the fileName in case it is an absolute path
-            fileName = new File(fileName).getName();
-            part.write(savePath + File.separator + fileName+".png");
-        }
-           
+//        File fileSaveDir = new File(savePath);
+//        if (!fileSaveDir.exists()) {
+//            fileSaveDir.mkdir();
+//        }
+//        
+//           for (Part part : request.getParts()) {
+//               
+//            //user ud give as file nama reduce the reaprt and limated storage   
+//            String fileName = uid;
+//            // refines the fileName in case it is an absolute path
+//            fileName = new File(fileName).getName();
+//            part.write(savePath + File.separator + fileName+".png");
+//        }
+//           
       //file uploading part end      
            
         String uname=request.getParameter("uname");
@@ -98,7 +98,7 @@ PrintWriter out;
       
     
        st.executeUpdate(update);
-       
+      
        
        //sucess notification
     out.println("Sucess");
@@ -109,7 +109,7 @@ PrintWriter out;
        
       
       }
-      catch(Exception ex){
+      catch(IOException | SQLException | ServletException ex){
           System.out.println(ex.toString());
                  session.setAttribute("error","true");
           	out.println("error");
