@@ -1,38 +1,14 @@
-<<<<<<< HEAD
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\cart\Loadingcart.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\DB\Conn.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\SearchServelt.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Model\items.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Model\cutomize.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\cart\AddtoCart.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Model\option.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\users\Logout.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\users\Register.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\LoadingFoods.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\users\Authentication.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\CustomizeServlet.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Controller\DeleteOptions.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Model\users\user.java
-C:\Users\Dinuka NJ\Documents\NetBeansProjects\nsbmfoodcanteen\src\main\java\Model\cart.java
-=======
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\users\LoadProfile.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Model\items.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\cart\Loadingcart.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\Admin\EditFoods.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Model\cart.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\CustomizeServlet.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\cart\AddtoCart.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\Admin\LoadFoodsTables.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\DeleteOptions.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Model\option.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\DB\Conn.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\LoadingFoods.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\users\Authentication.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\users\EditProfile.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Model\users\user.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\SearchServelt.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\users\Register.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\users\Logout.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Model\cutomize.java
-D:\Software Run\NetBeans-11.3\Netbeans Project\nsbmfoodcanteen\src\main\java\Controller\Admin\AddFoods.java
->>>>>>> 09f18cae65a5aca549202ed2efde498d983df499
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Model\items.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Model\cutomize.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Model\cart.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\users\EditProfile.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\cart\Loadingcart.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\LoadingFoods.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\DB\Conn.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Model\option.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\users\Authentication.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\cart\AddtoCart.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\users\Logout.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Model\users\user.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\users\Register.java
+C:\Users\kcrdi\OneDrive\Desktop\Devopler web account\Food--Delivery-System\src\main\java\Controller\users\LoadProfile.java
