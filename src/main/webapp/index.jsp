@@ -70,34 +70,7 @@
 
 	
 	<!-- <div class="page-inner"> -->
-	<nav class="gtco-nav" role="navigation">
-		<div class="gtco-container">
-			
-			<div class="row">
-				<div class="col-sm-4 col-xs-12">
-					<div id="gtco-logo"><a href="index.jsp">Food Court <em>.</em></a></div>
-				</div>
-				<div class="col-xs-8 text-right menu-1">
-                                      <%!  String imgpath;
-                                      String uname;
-                                      Connection conn=Conn.getConnection();
-                                      String uid;
-                                      int size = 0;
-                                      %>
-					<ul>
-						<li><a href="index.jsp">Home</a></li>
-						<li><a href="LoadingFoods?period=false">Foods</a></li>
-						<li><a href="about.jsp">About Us</a></li>
-						<li><a href="contact.jsp">Contact Us</a></li>
-                    
-                                         
-					</ul>	
-				</div>
-			</div>
-			
-		</div>
-	</nav>
-        
+<%@ include file="nav.jsp" %>  
         
 	
 	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/img_bg_1.jpg)" data-stellar-background-ratio="0.5">
@@ -113,7 +86,39 @@
 						<div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
                                                         <h1 class="display-1 text-center">All in good taste!</h1>
 							<span class="intro-text-small text-center">People Who Love To Eat Are Always The Best <a href="#" target="_blank">People</a></span>
-                                      
+                                                                                                <form method="post" action="SearchLoading">
+												<div class="form-row">
+                                                                                                    <div class="form-group">
+                                                                                                        
+                                                                                                            <div class="col-md-12">
+                                                                                                                    
+                                                                                                                <input 
+                                                                                                                    style=" 
+                                                                                                                    
+                                                                                                                    color:white;
+                                                                                                                    font-size:20px ;
+                                                                                                                    border-color: white;" 
+                                                                                                                    class="form-control" 
+                                                                                                                    type="search" 
+                                                                                                                    placeholder="Search" 
+                                                                                                                    name="search" 
+                                                                                                                    value="" 
+                                                                                                                    aria-label="Search">
+                                                                                                                
+                                                                                                               
+                                                                                                            
+                                                                                                            </div>
+                                                                                                        
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                <div class="form-row col-md-12" style="margin-top:12px;">
+                                                                                                    <div class="form-group">
+                                                                                                        <input type="submit" class="btn btn-primary btn-block" value="Search" >
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                </form>
+                                                                                                                   
+                                   
 						</div>
 						<div class="col-md-4 col-md-push-1 animate-box" data-animate-effect="fadeInRight">
 							<div class="form-wrap">
@@ -179,88 +184,50 @@
 			<div class="row">
 
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_1.jpg" class="fh5co-card-item image-popup">
+					<a href="LoadingFoods?period=breakfast" class="fh5co-card-item ">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_1.jpg" alt="Image" class="img-responsive">
+							<img src="images/breakfast.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Fresh Mushrooms</h2>
+							<h2>Special Breakfast</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$19.15</span></p>
+							<p><span class="price cursive-font">Breakfast</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_2.jpg" class="fh5co-card-item image-popup">
+					<a href="LoadingFoods?period=lunch" class="fh5co-card-item ">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_2.jpg" alt="Image" class="img-responsive">
+							<img src="images/lunch.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Cheese and Garlic Toast</h2>
+							<h2>Special Lunch</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$20.99</span></p>
+							<p><span class="price cursive-font">Lunch</span></p>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_3.jpg" class="fh5co-card-item image-popup">
+					<a href="LoadingFoods?period=dinner" class="fh5co-card-item ">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_3.jpg" alt="Image" class="img-responsive">
+							<img src="images/dinner.jpg" alt="Image" class="img-responsive">
 						</figure>
 						<div class="fh5co-text">
-							<h2>Grilled Chiken Salad</h2>
+							<h2>Special Dinner</h2>
 							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$8.99</span></p>
+							<p><span class="price cursive-font">Dinner</span></p>
 
 						</div>
 					</a>
 				</div>
 
 
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_4.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_4.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Organic Egg</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$12.99</span></p>
-						</div>
-					</a>
-				</div>
+				
 
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_5.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_5.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Tomato Soup with Chicken</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$23.10</span></p>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="images/img_6.jpg" class="fh5co-card-item image-popup">
-						<figure>
-							<div class="overlay"><i class="ti-plus"></i></div>
-							<img src="images/img_6.jpg" alt="Image" class="img-responsive">
-						</figure>
-						<div class="fh5co-text">
-							<h2>Salad with Crispy Chicken</h2>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia..</p>
-							<p><span class="price cursive-font">$5.59</span></p>
-						</div>
-					</a>
-				</div>
+				
 
 			</div>
                     
