@@ -11,6 +11,7 @@ package Model.users;
  */
 public class user {
 
+   
     /**
      * @return the status
      */
@@ -142,6 +143,9 @@ public class user {
     }
  
     
+    
+    
+    //error fix part 1
     private String uname;
     private String fname;
     private String lname;
@@ -151,6 +155,7 @@ public class user {
     private String role;
     private String uid;
     private String status;
+
     
     
 }
