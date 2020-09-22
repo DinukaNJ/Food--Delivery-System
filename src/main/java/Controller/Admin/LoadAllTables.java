@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author kcrdi
  */
-public class LoadFoodsTables extends HttpServlet {
+public class LoadAllTables extends HttpServlet {
 
    
 Connection conn=Conn.getConnection();
