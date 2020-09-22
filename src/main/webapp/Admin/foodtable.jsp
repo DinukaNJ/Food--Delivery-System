@@ -38,37 +38,37 @@
         Tip 2: you can also add an image using data-image tag
     -->
      <div class="logo"><a href="http://nsbmcanteen.com" class="simple-text logo-normal">
-              <img src="${pageContext.request.contextPath}/assets/icon/nsbmlogo.png" width="60px;">
+              <img src="../assets/icon/nsbmlogo.png" width="60px;">
           NSBM Canteen
         </a></div>
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item  ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/Admin/index.jsp">
+            <a class="nav-link" href="./index.jsp">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-<!--          <li class="nav-item ">
+          <li class="nav-item ">
             <a class="nav-link" href="./userprofile.jsp">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
-          </li>-->
+          </li>
           <li class="nav-item active ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/LoadAllTables">
+            <a class="nav-link" href="./tables.jsp">
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/LoadUser">
+            <a class="nav-link" href="./viewuser.html">
               <i class="material-icons">people</i>
               <p>Users</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="./viewoption.html">
               <i class="fa fa-cutlery "></i>
               <p>Food Management</p>
             </a>
@@ -116,9 +116,7 @@
                           <input type="text" class="form-control"  placeholder="Food Name"  name="fdname">
                       </div>
                     </div>
-                      <div class="form-group row">  
-                          <label  class="col-sm-2 col-form-label">food descrption</label>
-                      </div>
+                      <div class="form-group row">  <label  class="col-sm-2 col-form-label">food descrption</label></div>
                      
                     <div class="form-group row">
                        
@@ -140,24 +138,22 @@
                  
                       
                        <div class="form-group row">
-                           <div class="col-sm-10">
                       <label for="sel1">Type</label>
                       <select class="form-control" id="fdtype" name="fdtype">
                           <option value="Fried Rice">Fried Rice</option>
                           <option value="Rice and Curry">Rice and Curry</option>
                           <option value="Kottu">Kottu</option>
-                          <option value="Short Eats">Short Eats</option>
-                           <option value="Other">Other</option> 
+                          <option value="Shorties">Shorties</option>
+                           <option value="other">other</option> 
                            <option value="String hoppers">String hoppers</option> 
                            <option value="Grain">Grain</option>
                            <option value="Noodles">Noodles</option>
                            
                       </select>
                     </div>
-                      </div>
+                      
                       
                     <div class="form-group row">
-                        <div class="col-sm-10">
                       <label for="sel1">Category</label>
                       <select class="form-control" id="fdcat" name="fdcat">
                           <option value="beverages">Beverages</option>
@@ -168,9 +164,8 @@
                            
                       </select>
                     </div>
-                      </div>
+                      
                     <div class="form-group row">
-                        <div class="col-sm-10">
                       <label for="sel1">Period</label>
                       <select class="form-control" id="fdperiod" name="fdperiod">
                           <option value="breakfast">Breakfast</option>
@@ -183,21 +178,18 @@
                      
                       
                     </div>
-                      </div>
+                      
                     
                      <div class="form-group row">
-                         <div class="col-sm-10">
                         <label for="sel1">Food Image</label>
                       </div>
-                      </div>
-                    <div class="col-sm-10">
+                      
                       <input type="file" class="form-control" name="fdimmg"> 
-                      </div>
                     <div class="modal-footer">
                       <div class="col-sm-10 text-right">
                           
                             
-                        <button type="submit" class="btn btn-success">Add</button>
+                        <button type="submit" class="btn btn-primary">Add</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                       </div>
                     </div>
@@ -216,21 +208,21 @@
               
               
               
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Add
 </button>
          
 
             <div class="col-md-12">
                 
-<% String error = (String) (request.getSession().getAttribute("error") != null ? request.getSession().getAttribute("error"):"");
+               <% String error = (String) (request.getSession().getAttribute("error") != null ? request.getSession().getAttribute("error"):"");
 
 if(error.equals("true")){
    
 
 %>
             
-   <h3 style="color: red;float: right;"> Error <h3> <br>  
+    <h1> Erorr <h1>    
             
             <%
                 
@@ -240,7 +232,7 @@ if(error.equals("true")){
 else if(error.equals("false")){
 %>
             
-<h3 style="color: green;float: right;"> Success <h3> <br>   
+    <h1> Sucess <h1>    
             
             <%
 
@@ -249,14 +241,14 @@ else if(error.equals("false")){
 
 %>
               <div class="card">
-                <div class="card-header card-header-success">
+                <div class="card-header card-header-primary">
                   <h4 class="card-title ">Food Detais</h4>
                   <p class="card-category"> Here is a subtitle for this table</p>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
                     <table class="table">
-                      <thead class=" text-success">
+                      <thead class=" text-primary">
                         <th>
                            ID
                         </th>
@@ -338,8 +330,8 @@ else if(error.equals("false")){
                           <option value="Fried Rice">Fried Rice</option>
                           <option value="Rice and Curry">Rice and Curry</option>
                           <option value="Kottu">Kottu</option>
-                          <option value="Short Eats">Short Eats</option>
-                           <option value="Other">Other</option> 
+                          <option value="Shorties">Shorties</option>
+                           <option value="other">other</option> 
                            <option value="String hoppers">String hoppers</option> 
                            <option value="Grain">Grain</option>
                            <option value="Noodles">Noodles</option>
@@ -373,7 +365,7 @@ else if(error.equals("false")){
                           
                           <td class="td-actions text-right">
                               
-                              <button type="submit" rel="tooltip" title="Edit " value="edit" class="btn btn-success btn-link btn-sm">
+                              <button type="submit" rel="tooltip" title="Edit " value="edit" class="btn btn-primary btn-link btn-sm">
                                 <i class="material-icons">edit</i>
                               </button>
                               

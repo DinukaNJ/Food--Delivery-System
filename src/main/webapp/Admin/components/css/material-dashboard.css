@@ -3705,7 +3705,7 @@ tbody.collapse.show {
 .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #43a047;
+  background-color: #f8f9fa;
 }
 
 .dropdown-item.active,
@@ -13845,7 +13845,7 @@ fieldset[disabled] .form-group .form-control {
 .navbar.bg-primary .dropdown-item:hover,
 .navbar.bg-primary .dropdown-item:focus {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
-  background-color: #43a047;
+  background-color: #9c27b0;
   color: #fff;
 }
 
@@ -14812,7 +14812,7 @@ h2.title {
 .dropdown-menu a:focus,
 .dropdown-menu a:active {
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
-  background-color: #43a047;
+  background-color: #9c27b0;
   color: #FFFFFF;
 }
 

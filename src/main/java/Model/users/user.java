@@ -11,21 +11,6 @@ package Model.users;
  */
 public class user {
 
-   
-    /**
-     * @return the status
-     */
-    public String getStatus() {
-        return status;
-    }
-
-    /**
-     * @param status the status to set
-     */
-    public void setStatus(String status) {
-        this.status = status;
-    }
-
     /**
      * @return the uid
      */
@@ -143,9 +128,6 @@ public class user {
     }
  
     
-    
-    
-    //error fix part 1
     private String uname;
     private String fname;
     private String lname;
@@ -154,8 +136,7 @@ public class user {
     private String address;
     private String role;
     private String uid;
-    private String status;
-
+    
     
     
 }

@@ -21,20 +21,6 @@
 </head>
 
 <body class="">
-    
- <% 
-  String uid = (String) (request.getSession().getAttribute("uid") != null ? request.getSession().getAttribute("uid"):"");
-        if(uid.equals("")) {
-            
-            
-          //  response.sendRedirect("Login.jsp");
-            request.getRequestDispatcher("../Login.jsp").forward(request, response);
-            
-            
-        }
-  %>  
-    
-    
   <div class="wrapper ">
     <div class="sidebar" data-color="green" data-background-color="white" data-image="assets/img/sidebar-1.jpg">
       <!--
@@ -49,19 +35,19 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="./index.jsp">
+            <a class="nav-link" href="./index.html">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
-<!--          <li class="nav-item ">
+          <li class="nav-item ">
             <a class="nav-link" href="./userprofile.jsp">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
-          </li>-->
+          </li>
           <li class="nav-item" >
-            <a class="nav-link" href="${pageContext.request.contextPath}/LoadAllTables">
+            <a class="nav-link" href="./tables.jsp">
               <i class="material-icons">content_paste</i>
               <p>Table List</p>
             </a>
@@ -69,7 +55,7 @@
           </li>
           
           <li class="nav-item ">
-            <a class="nav-link" href="${pageContext.request.contextPath}/LoadUser">
+            <a class="nav-link" href="./viewuser.html">
               <i class="material-icons">people</i>
               <p>Users</p>
             </a>
@@ -113,7 +99,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats" >
-                    <h4><a  href="${pageContext.request.contextPath}/LoadFoodsTables">Food</a></h4>
+                    <h4><a  href="./LoadFoodsTables">Food</a></h4>
                     <a href="javascript:;"></a>
                   </div>
                 </div>
@@ -130,7 +116,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <h4><a href="${pageContext.request.contextPath}/LoadOrders">Order</a></h4>
+                    <h4><a href="vieworder.html">Order</a></h4>
                   </div>
                 </div>
               </div>
@@ -145,7 +131,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <h4><a href="${pageContext.request.contextPath}/OptionsLoadTables">Food Option</a></h4>
+                    <h4><a href="viewoption.html">Food Option</a></h4>
                   </div>
                 </div>
               </div>
@@ -160,7 +146,7 @@
                 </div>
                 <div class="card-footer">
                   <div class="stats">
-                    <h4><a href="${pageContext.request.contextPath}/LoadUser">User</a></h4>
+                    <h4><a href="viewuser.html">User</a></h4>
                   </div>
                 </div>
               </div>

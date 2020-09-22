@@ -2,15 +2,11 @@
   <%!  String imgpath;
            String uid="1";
            
-  %>
+           %>
  
- <%          uid = (String) (request.getSession(false).getAttribute("uid") != null ? request.getSession().getAttribute("uid"):""); 
+ <%          uid = (String) (request.getSession().getAttribute("uid") != null ? request.getSession().getAttribute("uid"):""); 
  
             imgpath=uid+".png";
-            
-
-
-       
  %>
  
       <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -25,23 +21,20 @@
           <div class="collapse navbar-collapse justify-content-end">
               <a><%= (String) (request.getSession().getAttribute("uname") != null ? request.getSession().getAttribute("uname"):"") %></a>
               
-<!--session check  --> 
- 
+
             <ul class="navbar-nav">
               
               
               <li class="nav-item dropdown">
-                 
                 <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                 
-                    <img src="${pageContext.request.contextPath}/assets/profile/<%=imgpath %>" style="width:50px;height: 50px; border-radius:30px;">
+                    <img src="${pageContext.request.contextPath}/assets/profile/<%= imgpath %>" style="width:50px;height: 50px; border-radius:30px;">
                   <p class="d-lg-none d-md-block">
                     Account
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-<!--                  <a class="dropdown-item" href="viewuser.html">Edit Profile</a>-->
-                   <a class="dropdown-item" href=" ${pageContext.request.contextPath}/Logout">Log out</a>
+                  <a class="dropdown-item" href="viewuser.html">Edit Profile</a>
+                   <a class="dropdown-item" href=" ../Logout">Log out</a>
                  
            
                 </div>

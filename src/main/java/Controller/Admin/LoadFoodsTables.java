@@ -38,7 +38,7 @@ PrintWriter out;
       
     loadFoods(request);  
     
-    // out.print("hello");
+     out.print("hello");
     
 //                    RequestDispatcher rd = request.getRequestDispatcher("Admin/foodtable.jsp");
 //	            rd.forward(request, response);

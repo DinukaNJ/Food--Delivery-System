@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Controller;
 
 import DB.Conn;
@@ -21,7 +25,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+/**
+ *
+ * @author kcrdi
+ */
 public class CustomizeServlet extends HttpServlet {
 
     Connection conn=Conn.getConnection();

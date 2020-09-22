@@ -44,9 +44,7 @@ public class AddtoCart extends HttpServlet {
     
     out=response.getWriter();
     
-//        out.print(request.getParameter("uid")+"\n");
-//        out.print(request.getParameter("pid2")+"\n");
-//        out.print(request.getParameter("pname")+"\n");
+
         //User validations
         String uid = (String) (request.getSession().getAttribute("uid") != null ? request.getSession().getAttribute("uid"):"");
         if(uid.equals("")) {
