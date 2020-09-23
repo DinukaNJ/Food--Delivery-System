@@ -32,6 +32,22 @@
         <servlet-name>DeleteFoods</servlet-name>
         <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>OptionsLoadTables</servlet-name>
+        <servlet-class>Controller.Admin.OptionsLoadTables</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadUser</servlet-name>
+        <servlet-class>Controller.Admin.LoadUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadOrders</servlet-name>
+        <servlet-class>Controller.Admin.LoadOrders</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoadAllTables</servlet-name>
+        <servlet-class>Controller.Admin.LoadAllTables</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CustomizeServlet</servlet-name>
         <url-pattern>/CustomizeServlet</url-pattern>
@@ -63,6 +79,50 @@
     <servlet-mapping>
         <servlet-name>DeleteFoods</servlet-name>
         <url-pattern>/DeleteFoods</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>LoadFoodsTables</servlet-name>
+        <servlet-class>Controller.Admin.LoadFoodsTables</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditFoods</servlet-name>
+        <servlet-class>Controller.Admin.EditFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteFoods</servlet-name>
+        <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditOption</servlet-name>
+        <servlet-class>Controller.Admin.EditOption</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddOption</servlet-name>
+        <servlet-class>Controller.Admin.AddOption</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditUsers</servlet-name>
+        <servlet-class>Controller.Admin.EditUsers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUsers</servlet-name>
+        <servlet-class>Controller.Admin.DeleteUsers</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OptionsLoadTables</servlet-name>
+        <url-pattern>/OptionsLoadTables</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadUser</servlet-name>
+        <url-pattern>/LoadUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadOrders</servlet-name>
+        <url-pattern>/LoadOrders</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoadAllTables</servlet-name>
+        <url-pattern>/LoadAllTables</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -11,6 +11,20 @@ package Model;
  */
 public class option {
 
+    /**
+     * @return the id
+     */
+    public String getId() {
+        return id;
+    }
+
+    /**
+     * @param id the id to set
+     */
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public option(){}
    
    
@@ -44,6 +58,10 @@ public class option {
     private String type;
     private String options;
     private String price;
+    
+    
+    
+    private String id;
     
     
 }
