@@ -42,7 +42,7 @@
 
         Tip 2: you can also add an image using data-image tag
     --> 
-      <div class="logo"><a href="nsbmcanteen.com" class="simple-text logo-normal">
+      <div class="logo"><a href="index.jsp" class="simple-text logo-normal">
               <img src="../assets/icon/nsbmlogo.png" width="60px;">
           NSBM Canteen
         </a></div>

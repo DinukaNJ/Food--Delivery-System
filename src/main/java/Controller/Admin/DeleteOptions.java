@@ -17,10 +17,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-/**
- *
- * @author kcrdi
- */
+
 @WebServlet(name = "DeleteOptions", urlPatterns = {"/DeleteOptions"})
 public class DeleteOptions extends HttpServlet {
 

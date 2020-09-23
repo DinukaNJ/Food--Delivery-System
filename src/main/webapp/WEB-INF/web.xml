@@ -25,14 +25,6 @@
         <servlet-class>Controller.Admin.LoadFoodsTables</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>EditFoods</servlet-name>
-        <servlet-class>Controller.Admin.EditFoods</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>DeleteFoods</servlet-name>
-        <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>OptionsLoadTables</servlet-name>
         <servlet-class>Controller.Admin.OptionsLoadTables</servlet-class>
     </servlet>
@@ -47,6 +39,34 @@
     <servlet>
         <servlet-name>LoadAllTables</servlet-name>
         <servlet-class>Controller.Admin.LoadAllTables</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteFoods</servlet-name>
+        <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUsers</servlet-name>
+        <servlet-class>Controller.Admin.DeleteUsers</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddFoods</servlet-name>
+        <servlet-class>Controller.Admin.AddFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteOptions</servlet-name>
+        <servlet-class>Controller.Admin.DeleteOptions</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteOrder</servlet-name>
+        <servlet-class>Controller.Admin.DeleteOrder</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditFoods</servlet-name>
+        <servlet-class>Controller.Admin.EditFoods</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditUsers</servlet-name>
+        <servlet-class>Controller.Admin.EditUsers</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>CustomizeServlet</servlet-name>
@@ -72,25 +92,9 @@
         <servlet-name>LoadFoodsTables</servlet-name>
         <url-pattern>/LoadFoodsTables</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>EditFoods</servlet-name>
-        <url-pattern>/EditFoods</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>DeleteFoods</servlet-name>
-        <url-pattern>/DeleteFoods</url-pattern>
-    </servlet-mapping>
     <servlet>
         <servlet-name>LoadFoodsTables</servlet-name>
         <servlet-class>Controller.Admin.LoadFoodsTables</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>EditFoods</servlet-name>
-        <servlet-class>Controller.Admin.EditFoods</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>DeleteFoods</servlet-name>
-        <servlet-class>Controller.Admin.DeleteFoods</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>EditOption</servlet-name>
@@ -99,14 +103,6 @@
     <servlet>
         <servlet-name>AddOption</servlet-name>
         <servlet-class>Controller.Admin.AddOption</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>EditUsers</servlet-name>
-        <servlet-class>Controller.Admin.EditUsers</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>DeleteUsers</servlet-name>
-        <servlet-class>Controller.Admin.DeleteUsers</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>OptionsLoadTables</servlet-name>
@@ -123,6 +119,34 @@
     <servlet-mapping>
         <servlet-name>LoadAllTables</servlet-name>
         <url-pattern>/LoadAllTables</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteFoods</servlet-name>
+        <url-pattern>/DeleteFoods</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteUsers</servlet-name>
+        <url-pattern>/DeleteUsers</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddFoods</servlet-name>
+        <url-pattern>/AddFoods</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteOptions</servlet-name>
+        <url-pattern>/DeleteOptions</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteOrder</servlet-name>
+        <url-pattern>/DeleteOrder</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditFoods</servlet-name>
+        <url-pattern>/EditFoods</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditUsers</servlet-name>
+        <url-pattern>/EditUsers</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
